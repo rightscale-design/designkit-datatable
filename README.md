@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-npm install designkit-* --save
+npm install designkit-datatable --save
 ```
 
 ## Usage
