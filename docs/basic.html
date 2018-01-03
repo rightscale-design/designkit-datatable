@@ -92,13 +92,15 @@
       $scope.gridOptions = {
         columnDefs: columnDefs,
         rowData: rowData,
-        enableRangeSelection: true,
-        enableSorting: true,
-        enableFilter: true,
-        animateRows: true,
-        enableColResize: true,
+        rowHeight: 32,
         headerHeight: 38,
-        rowHeight: 32
+        enableColResize: true,
+        enableSorting: true,
+        enableRangeSelection: true,
+        // enableFilter: true,
+        unSortIcon: true,
+        sortingOrder: ['asc', 'desc'],
+        animateRows: true
       };
 
     });
