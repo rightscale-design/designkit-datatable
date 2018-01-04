@@ -331,17 +331,17 @@
 
   // grid tools panel
   .ag-tool-panel {
+    background-color: #fff;
     border-color: $grey-border;
     border-style: solid;
     border-width: 0 0 0 1px;
-    background-color: #fff;
     .ag-column-select-panel {
       margin-top: 16px;
     }
   }
 }
 
-/* ! 1.2 - Grid theme icons */
+// Theme icons
 
 .ag-theme-designkit {
   // header menu
@@ -452,7 +452,5 @@
       background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'><g fill='none' fill-rule='evenodd'><path fill='#D8D8D8' d='M9 4v2H0V4z'/><path stroke='#57626C' d='M8.5 4.5v1h-8v-1z'/><g><path fill='#D8D8D8' d='M4.786 1.957L5.993.75l4.242 4.243-4.242 4.242-1.207-1.207L7.82 4.993'/><path stroke='#57626C' d='M5.493 1.957l.5-.5 3.535 3.536-3.535 3.535-.5-.5 3.035-3.035z'/></g></g></svg>") center no-repeat;
       background-size: 12px 12px;
     }
-
   }
-
 }
