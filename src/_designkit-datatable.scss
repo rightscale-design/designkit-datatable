@@ -336,7 +336,16 @@
     border-style: solid;
     border-width: 0 0 0 1px;
     .ag-column-select-panel {
-      margin-top: 16px;
+      margin-top: 10px;
+    }
+    .ag-pivot-mode {
+      border-bottom: 1px solid $grey-border-light;
+      box-sizing: border-box;
+      height: 25px;
+      line-height: 25px;
+      .ag-pivot-mode-select {
+        margin-left: 4px;
+      }
     }
   }
 }
@@ -398,7 +407,10 @@
   }
   // checked icon
   .ag-icon-checkbox-checked {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><rect id='a' width='12' height='12' rx='1'/></defs><g fill='none' fill-rule='evenodd'><use fill='#FFF' xlink:href='#a'/><rect width='11' height='11' x='.5' y='.5' stroke='#80C11A' rx='1'/><path stroke='#80C11A' d='M9 3L6 8.5l-2.5-2'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><rect id='a' width='12' height='12' rx='1'/></defs><g fill='none' fill-rule='evenodd'><use fill='#DADEE3' xlink:href='#a'/><rect width='11' height='11' x='.5' y='.5' stroke='#57626C' rx='1'/></g></svg>");
+  }
+  .ag-icon-checkbox-unchecked-readonly {
+
   }
 }
 
