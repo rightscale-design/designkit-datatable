@@ -362,13 +362,13 @@
       }
       .ag-column-drop-empty-message {
         padding-right: 4px;
-        padding-left: 16px;
+        padding-left: 21px;
         clear: both;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 8px;
-        color: rgba($text, .5);
+        line-height: 1;
+        color: rgba($text, .8);
       }
       .ag-icon {
         float: left;
@@ -443,7 +443,7 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><rect id='a' width='12' height='12' rx='1'/></defs><g fill='none' fill-rule='evenodd'><use fill='#DADEE3' xlink:href='#a'/><rect width='11' height='11' x='.5' y='.5' stroke='#57626C' rx='1'/></g></svg>");
   }
   // readonly checked icon
-  .ag-icon-checkbox-checked {
+  .ag-icon-checkbox-checked-readonly {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><rect id='a' width='12' height='12' rx='1'/></defs><g fill='none' fill-rule='evenodd'><use fill='#DADEE3' xlink:href='#a'/><rect width='11' height='11' x='.5' y='.5' stroke='#80C11A' rx='1'/><path stroke='#80C11A' d='M9 3L6 8.5l-2.5-2'/></g></svg>");
   }
   // group icon
@@ -453,6 +453,10 @@
   // aggregation icon
   .ag-icon-aggregation {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path fill='none' fill-rule='evenodd' stroke='#57626C' stroke-width='2' d='M9.5 2.5h-6l2 3.5-2 3.5h6'/></svg>");
+  }
+  // pivot icon
+  .ag-icon-pivot {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><g fill='none' fill-rule='evenodd' stroke='#57626C'><rect width='9' height='9' x='1.5' y='1.5' rx='1'/><path stroke-linecap='square' d='M10.5 3.5h-9M3.5 1.5v9'/><path d='M7.5 6.5l1-1 1 1M6.5 7.5l-1 1 1 1'/><path d='M8.5 5.5v3h-3'/></g></svg>");
   }
 }
 
