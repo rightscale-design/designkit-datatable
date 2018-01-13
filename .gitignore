@@ -1,6 +1,7 @@
 .sass-cache
 *.css.map
 .DS_Store
-node_modules
-npm-debug.log
-temp
+*.log
+npm-debug.log*
+node_modules/
+temp/
