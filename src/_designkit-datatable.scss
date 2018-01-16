@@ -382,9 +382,9 @@
 // Theme icons
 
 .ag-theme-designkit {
-  // header menu
+  // menu icon
   .ag-icon-menu {
-    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'><g fill='%238596A4' fill-rule='evenodd'><path d='M0 0h10v2H0zM0 4h10v2H0zM0 8h10v2H0z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><g fill='%2357626C' fill-rule='evenodd'><path d='M1 1h10v2H1zM1 5h10v2H1zM1 9h10v2H1z'/></g></svg>");
   }
   // header sort none icon
   .ag-icon-none {
@@ -405,10 +405,6 @@
   // contracted group icon
   .ag-icon-contracted {
     background-image: url("data:image/svg+xml;utf8,<svg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'><title>Path 5</title><path d='M1 1l5.01 5L11 1.02' stroke='%230A83F6' stroke-width='2' fill='none' fill-rule='evenodd'/></svg>");
-  }
-  // menu icon
-  .ag-icon-menu {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><g fill='%2357626C' fill-rule='evenodd'><path d='M1 1h10v2H1zM1 5h10v2H1zM1 9h10v2H1z'/></g></svg>");
   }
   // columns icon
   .ag-icon-columns {

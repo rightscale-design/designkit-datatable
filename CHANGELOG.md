@@ -1,3 +1,7 @@
+# v1.0.3
+* Updated README
+* Updated Docs
+
 # v1.0.2
 
 * Updated icons string for firefox
