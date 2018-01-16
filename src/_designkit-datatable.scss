@@ -77,8 +77,9 @@
     }
 
     .ag-icon-none {
-      background-position: 2px 4px;
+      vertical-align: middle;
       background-size: 6px 9.8px;
+      background-position-y: 1px;
       opacity: 1;
     }
 
@@ -198,10 +199,12 @@
   // grid group icons
   .ag-body {
     .ag-icon-expanded {
+      background-size: contain;
       transform: rotate3d(0, 0, 1, 0deg);
       transform-origin: center center;
     }
     .ag-icon-contracted {
+      background-size: contain;
       transform: rotate3d(0, 0, 1, -180deg);
       transform-origin: center center;
     }

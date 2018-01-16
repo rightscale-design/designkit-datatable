@@ -69,8 +69,9 @@
 }
 
 .ag-theme-designkit .ag-header .ag-icon-none {
-  background-position: 2px 4px;
+  vertical-align: middle;
   background-size: 6px 9.8px;
+  background-position-y: 1px;
   opacity: 1;
 }
 
@@ -165,6 +166,7 @@
 }
 
 .ag-theme-designkit .ag-body .ag-icon-expanded {
+  background-size: contain;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
           transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transform-origin: center center;
@@ -172,6 +174,7 @@
 }
 
 .ag-theme-designkit .ag-body .ag-icon-contracted {
+  background-size: contain;
   -webkit-transform: rotate3d(0, 0, 1, -180deg);
           transform: rotate3d(0, 0, 1, -180deg);
   -webkit-transform-origin: center center;

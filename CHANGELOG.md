@@ -1,3 +1,6 @@
+# v1.0.4
+* Fixed FireFox icon size issue
+
 # v1.0.3
 * Updated README
 * Updated Docs
