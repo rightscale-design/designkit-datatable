@@ -80,8 +80,9 @@ npm install designkit-datatable --save
 }
 
 .ag-theme-designkit .ag-header .ag-icon-none {
-  background-position: 2px 4px;
+  vertical-align: middle;
   background-size: 6px 9.8px;
+  background-position-y: 1px;
   opacity: 1;
 }
 
@@ -176,6 +177,7 @@ npm install designkit-datatable --save
 }
 
 .ag-theme-designkit .ag-body .ag-icon-expanded {
+  background-size: contain;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
           transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transform-origin: center center;
@@ -183,6 +185,7 @@ npm install designkit-datatable --save
 }
 
 .ag-theme-designkit .ag-body .ag-icon-contracted {
+  background-size: contain;
   -webkit-transform: rotate3d(0, 0, 1, -180deg);
           transform: rotate3d(0, 0, 1, -180deg);
   -webkit-transform-origin: center center;
@@ -488,7 +491,6 @@ npm install designkit-datatable --save
   background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'><g fill='none' fill-rule='evenodd'><path fill='%23D8D8D8' d='M9 4v2H0V4z'/><path stroke='%2357626C' d='M8.5 4.5v1h-8v-1z'/><g><path fill='%23D8D8D8' d='M4.786 1.957L5.993.75l4.242 4.243-4.242 4.242-1.207-1.207L7.82 4.993'/><path stroke='%2357626C' d='M5.493 1.957l.5-.5 3.535 3.536-3.535 3.535-.5-.5 3.035-3.035z'/></g></g></svg>") center no-repeat;
   background-size: 12px 12px;
 }
-
 ```
 
 ## Author
