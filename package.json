@@ -1,6 +1,6 @@
 {
   "name": "designkit-datatable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Sass module for datatables used in RightScale apps.",
   "homepage": "https://github.com/rightscale-design/designkit-datatable#readme",
   "repository": {
@@ -22,17 +22,18 @@
   "files": [
     "LICENSE",
     "README.md",
-    "dist/",
-    "src/"
+    "dist/designkit-datatable.css",
+    "dist/designkit-datatable.min.css",
+    "src/_designkit-datatable.scss",
+    "src/index.scss"
   ],
-  "style": "src/index.scss",
+  "scss": "src/_designkit-datatable.scss",
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
   "devDependencies": {
     "autoprefixer": "^6.4.0",
-    "bourbon": "^4.3.4",
     "csso": "^3.1.1",
     "designkit-colors": "^1.0.0",
     "node-sass": "^4.5.3",

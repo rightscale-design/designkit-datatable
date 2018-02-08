@@ -1,3 +1,7 @@
+# v1.0.5
+* Removed Bourbon
+* Updated package.json
+
 # v1.0.4
 * Fixed FireFox icon size issue
 
