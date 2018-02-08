@@ -22,10 +22,12 @@
   "files": [
     "LICENSE",
     "README.md",
-    "dist/",
-    "src/"
+    "dist/designkit-datatable.css",
+    "dist/designkit-datatable.min.css",
+    "src/_designkit-datatable.scss",
+    "src/index.scss"
   ],
-  "scss": "src/_designkit-utilities.scss",
+  "scss": "src/_designkit-datatable.scss",
   "browserslist": [
     "> 1%",
     "last 2 versions"
