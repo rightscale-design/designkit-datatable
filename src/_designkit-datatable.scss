@@ -17,6 +17,7 @@
       font-weight: 600;
       line-height: 28px;
       color: $link;
+      border-right: 1px solid lighten($grey-border-light, 4);
 
       &:focus,
       &:hover {
@@ -45,22 +46,13 @@
 
       // Grid cell resize border
       .ag-header-cell-resize {
-        position: relative;
-
-        &:after {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 4px;
-          z-index: 1;
-          content: "";
-          border-right: solid 2px #f5f5f5;
-          opacity: 1;
+        transition: background-color 250ms ease;
+        &:hover {
+          background-color: lighten($blue-icon-highlight, 5);
         }
-
-        &:hover:after {
-          border-right: solid 2px #ebebeb;
-          opacity: 1 !important;
+        &:active,
+        &:focus {
+          background-color: lighten($blue-icon, 5);
         }
       }
 
@@ -101,8 +93,42 @@
     .ag-icon-menu {
       margin-top: 12px;
       background-size: 10px;
+      opacity: 0.6;
     }
   }
+
+  // pinned left header
+  .ag-pinned-left-header {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      width: 4px;
+      height: 100%;
+      content: '';
+      background-color: rgba($grey-border, 0.3);
+    }
+  }
+
+  // pinned right header
+  .ag-pinned-right-header {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 0;
+      right: auto;
+      left: 0;
+      bottom: 0;
+      width: 3px;
+      height: 100%;
+      content: '';
+      background-color: rgba($grey-border, 0.3);
+    }
+  }
+
 
   // grid body elements
   .ag-body {
@@ -148,6 +174,10 @@
     .ag-cell {
       line-height: 24px;
       user-select: auto;
+
+      &.ag-cell-no-focus {
+        border-right: 1px solid lighten($grey-border-light, 6);
+      }
 
       &.ag-cell-not-inline-editing {
         &:focus {
@@ -233,10 +263,43 @@
     }
   }
 
+  // pinned grid columns
+  .ag-body {
+    .ag-pinned-left-cols-container {
+      position: relative;
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        width: 4px;
+        height: 100%;
+        content: '';
+        background-color: rgba($grey-border, 0.3);
+      }
+    }
+
+    .ag-pinned-right-cols-container {
+      position: relative;
+      &:after {
+        position: absolute;
+        top: 0;
+        right: auto;
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        height: 100%;
+        content: '';
+        background-color: rgba($grey-border, 0.3);
+      }
+    }
+  }
+
+  // drag and drop grid headers
   .ag-header-cell-moving {
     background-color: rgba($inline-highlight, .35);
   }
-
 
   // grid column menu
   .ag-menu {
@@ -268,6 +331,10 @@
           background-color: #fff;
           border-color: #d1d6dc;
           border-bottom: 2px solid #fff !important;
+        }
+        // grid column menu icon
+        .ag-icon-menu {
+          background-size: 10px;
         }
       }
     }
@@ -387,7 +454,7 @@
 .ag-theme-designkit {
   // menu icon
   .ag-icon-menu {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><g fill='%2357626C' fill-rule='evenodd'><path d='M1 1h10v2H1zM1 5h10v2H1zM1 9h10v2H1z'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'><g fill='%2357626C' fill-rule='evenodd'><path d='M0 0h10v2H0zM0 4h10v2H0zM0 8h10v2H0z'/></g></svg>");
   }
   // header sort none icon
   .ag-icon-none {
@@ -456,6 +523,10 @@
   // pivot icon
   .ag-icon-pivot {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><g fill='none' fill-rule='evenodd' stroke='%2357626C'><rect width='9' height='9' x='1.5' y='1.5' rx='1'/><path stroke-linecap='square' d='M10.5 3.5h-9M3.5 1.5v9'/><path d='M7.5 6.5l1-1 1 1M6.5 7.5l-1 1 1 1'/><path d='M8.5 5.5v3h-3'/></g></svg>");
+  }
+  // filter icon
+  .ag-icon-filter {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path fill='%2357626C' fill-rule='evenodd' d='M1 2h10L7 6v5L5 9V6L1 2zm4 4v1h2V6H5z'/></svg>");
   }
 }
 
