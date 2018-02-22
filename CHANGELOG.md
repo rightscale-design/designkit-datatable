@@ -1,3 +1,10 @@
+# v1.0.6
+* Added pinned column styles
+* Added column borders
+* Updated icons set
+* Added readme template and script
+* Allowed for more intended groups
+
 # v1.0.5
 * Removed Bourbon
 * Updated package.json

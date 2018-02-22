@@ -1,12 +1,14 @@
-# Designkit Datatable
+# designkit-datatable
+1.0.6
+
+A Sass module for datatables used in RightScale apps.
 
 ## Install
-
-```bash
-npm install designkit-datatable --save
+```
+npm i --save designkit-datatable
 ```
 
-## The CSS
+## CSS
 
 ```css
 .ag-theme-designkit {
@@ -28,6 +30,7 @@ npm install designkit-datatable --save
   font-weight: 600;
   line-height: 28px;
   color: #0A83F6;
+  border-right: 1px solid #eef0f2;
 }
 
 .ag-theme-designkit .ag-header .ag-header-cell:focus, .ag-theme-designkit .ag-header .ag-header-cell:hover {
@@ -50,23 +53,15 @@ npm install designkit-datatable --save
 }
 
 .ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize {
-  position: relative;
+  transition: background-color 250ms ease;
 }
 
-.ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 4px;
-  z-index: 1;
-  content: "";
-  border-right: solid 2px #f5f5f5;
-  opacity: 1;
+.ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize:hover {
+  background-color: #6db5fa;
 }
 
-.ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize:hover:after {
-  border-right: solid 2px #ebebeb;
-  opacity: 1 !important;
+.ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize:active, .ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-resize:focus {
+  background-color: #3c9cf8;
 }
 
 .ag-theme-designkit .ag-header .ag-header-cell .ag-header-cell-menu-button {
@@ -101,6 +96,39 @@ npm install designkit-datatable --save
 .ag-theme-designkit .ag-header .ag-icon-menu {
   margin-top: 12px;
   background-size: 10px;
+  opacity: 0.6;
+}
+
+.ag-theme-designkit .ag-pinned-left-header {
+  position: relative;
+}
+
+.ag-theme-designkit .ag-pinned-left-header:after {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  content: '';
+  background-color: rgba(209, 214, 220, 0.3);
+}
+
+.ag-theme-designkit .ag-pinned-right-header {
+  position: relative;
+}
+
+.ag-theme-designkit .ag-pinned-right-header:after {
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  content: '';
+  background-color: rgba(209, 214, 220, 0.3);
 }
 
 .ag-theme-designkit .ag-body .ag-cell-not-inline-editing {
@@ -138,6 +166,10 @@ npm install designkit-datatable --save
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
+}
+
+.ag-theme-designkit .ag-body .ag-cell.ag-cell-no-focus {
+  border-right: 1px solid #f4f5f6;
 }
 
 .ag-theme-designkit .ag-body .ag-cell.ag-cell-not-inline-editing:focus {
@@ -206,6 +238,38 @@ npm install designkit-datatable --save
   background-color: rgba(35, 144, 247, 0.9);
 }
 
+.ag-theme-designkit .ag-body .ag-pinned-left-cols-container {
+  position: relative;
+}
+
+.ag-theme-designkit .ag-body .ag-pinned-left-cols-container:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  content: '';
+  background-color: rgba(209, 214, 220, 0.3);
+}
+
+.ag-theme-designkit .ag-body .ag-pinned-right-cols-container {
+  position: relative;
+}
+
+.ag-theme-designkit .ag-body .ag-pinned-right-cols-container:after {
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  content: '';
+  background-color: rgba(209, 214, 220, 0.3);
+}
+
 .ag-theme-designkit .ag-header-cell-moving {
   background-color: rgba(226, 229, 233, 0.35);
 }
@@ -244,6 +308,10 @@ npm install designkit-datatable --save
   background-color: #fff;
   border-color: #d1d6dc;
   border-bottom: 2px solid #fff !important;
+}
+
+.ag-theme-designkit .ag-menu .ag-tab-header .ag-tab .ag-icon-menu {
+  background-size: 10px;
 }
 
 .ag-theme-designkit .ag-menu .ag-tab-body {
@@ -367,7 +435,7 @@ npm install designkit-datatable --save
 }
 
 .ag-theme-designkit .ag-icon-menu {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><g fill='%2357626C' fill-rule='evenodd'><path d='M1 1h10v2H1zM1 5h10v2H1zM1 9h10v2H1z'/></g></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'><g fill='%2357626C' fill-rule='evenodd'><path d='M0 0h10v2H0zM0 4h10v2H0zM0 8h10v2H0z'/></g></svg>");
 }
 
 .ag-theme-designkit .ag-icon-none {
@@ -438,6 +506,10 @@ npm install designkit-datatable --save
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><g fill='none' fill-rule='evenodd' stroke='%2357626C'><rect width='9' height='9' x='1.5' y='1.5' rx='1'/><path stroke-linecap='square' d='M10.5 3.5h-9M3.5 1.5v9'/><path d='M7.5 6.5l1-1 1 1M6.5 7.5l-1 1 1 1'/><path d='M8.5 5.5v3h-3'/></g></svg>");
 }
 
+.ag-theme-designkit .ag-icon-filter {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path fill='%2357626C' fill-rule='evenodd' d='M1 2h10L7 6v5L5 9V6L1 2zm4 4v1h2V6H5z'/></svg>");
+}
+
 .ag-dnd-ghost.ag-fresh {
   z-index: 5;
   height: 25px !important;
@@ -491,6 +563,7 @@ npm install designkit-datatable --save
   background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'><g fill='none' fill-rule='evenodd'><path fill='%23D8D8D8' d='M9 4v2H0V4z'/><path stroke='%2357626C' d='M8.5 4.5v1h-8v-1z'/><g><path fill='%23D8D8D8' d='M4.786 1.957L5.993.75l4.242 4.243-4.242 4.242-1.207-1.207L7.82 4.993'/><path stroke='%2357626C' d='M5.493 1.957l.5-.5 3.535 3.536-3.535 3.535-.5-.5 3.035-3.035z'/></g></g></svg>") center no-repeat;
   background-size: 12px 12px;
 }
+
 ```
 
 ## Author
