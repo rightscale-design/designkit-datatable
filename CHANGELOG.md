@@ -3,6 +3,7 @@
 * Added column borders
 * Updated icons set
 * Added readme template and script
+* Allowed for more intended groups
 
 # v1.0.5
 * Removed Bourbon
