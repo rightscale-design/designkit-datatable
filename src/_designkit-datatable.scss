@@ -1,6 +1,10 @@
 .ag-theme-designkit {
   position: relative;
 
+  .ag-root {
+    border-width: 0;
+  }
+
   // Loading vertically centered
   &.loading {
     height: 100%;
@@ -128,7 +132,6 @@
       background-color: rgba($grey-border, 0.3);
     }
   }
-
 
   // grid body elements
   .ag-body {
@@ -327,15 +330,16 @@
     padding: 4px;
     padding: 0;
     background: #fff;
-    border: 1px solid #d1d6dc;
+    border: 1px solid $grey-border;
+    border-bottom: 1px solid darken($grey-border,3%);
     border-radius: 2px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
 
     .ag-tab-header {
       width: 100%;
       min-width: 220px;
       background-color: #f4f5f7;
-      box-shadow: 0 -1px 0 0 #d1d6dc inset;
+      box-shadow: 0 -1px 0 0 $grey-border inset;
       .ag-tab {
         display: inline-block;
         height: 16px;
@@ -349,7 +353,7 @@
         border-bottom: 2px solid transparent;
         &.ag-tab-selected {
           background-color: #fff;
-          border-color: #d1d6dc;
+          border-color: $grey-border;
           border-bottom: 2px solid #fff !important;
         }
         // grid column menu icon
@@ -397,6 +401,9 @@
         color: $link;
       }
     }
+    .ag-menu-separator {
+      border-top: 0 none;
+    }
     .ag-menu-separator > span {
       height: 8px;
       background-image: url("data:image/svg+xml;utf8,<svg width='1' height='8px' viewBox='0 0 1 8px' xmlns='http://www.w3.org/2000/svg'> <line x1='0' y1='4px' x2='1' y2='4px' stroke-width='1' stroke='%23E2E5E9'/> </svg>");
@@ -422,9 +429,9 @@
   // grid tools panel
   .ag-tool-panel {
     background-color: #fff;
-    border-color: $grey-border;
-    border-style: solid;
-    border-width: 0 0 0 1px;
+    .ag-column-panel {
+      border-left: 1px solid $grey-border;
+    }
     .ag-column-select-panel {
       margin-top: 10px;
     }
@@ -466,11 +473,14 @@
         margin: 0 4px;
       }
     }
+    .ag-side-buttons {
+      display: none;
+      width: 0;
+    }
   }
 }
 
 // Theme icons
-
 .ag-theme-designkit {
   // menu icon
   .ag-icon-menu {
@@ -561,7 +571,7 @@
   line-height: 25px;
   color: $heading;
   background: #f4f5f6;
-  border: 1px solid #d1d6dc;
+  border: 1px solid $grey-border;
   border-bottom: 1px solid #c8ced5;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
