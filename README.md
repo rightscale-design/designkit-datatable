@@ -1,5 +1,5 @@
 # designkit-datatable
-1.0.6
+1.0.7
 
 A Sass module for datatables used in RightScale apps.
 
@@ -13,6 +13,10 @@ npm i --save designkit-datatable
 ```css
 .ag-theme-designkit {
   position: relative;
+}
+
+.ag-theme-designkit .ag-root {
+  border-width: 0;
 }
 
 .ag-theme-designkit.loading {
@@ -208,6 +212,30 @@ npm i --save designkit-datatable
   padding-left: 7.2rem;
 }
 
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-4 {
+  padding-left: 9.6rem;
+}
+
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-5 {
+  padding-left: 12rem;
+}
+
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-6 {
+  padding-left: 14.4rem;
+}
+
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-7 {
+  padding-left: 16.8rem;
+}
+
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-8 {
+  padding-left: 19.2rem;
+}
+
+.ag-theme-designkit .ag-body .ag-row .ag-row-group-indent-9 {
+  padding-left: 21.6rem;
+}
+
 .ag-theme-designkit .ag-body .ag-icon-expanded {
   background-size: contain;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
@@ -279,16 +307,17 @@ npm i --save designkit-datatable
   padding: 4px;
   padding: 0;
   background: #fff;
-  border: 1px solid #d1d6dc;
+  border: 1px solid #D1D6DC;
+  border-bottom: 1px solid #c8ced5;
   border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
 }
 
 .ag-theme-designkit .ag-menu .ag-tab-header {
   width: 100%;
   min-width: 220px;
   background-color: #f4f5f7;
-  box-shadow: 0 -1px 0 0 #d1d6dc inset;
+  box-shadow: 0 -1px 0 0 #D1D6DC inset;
 }
 
 .ag-theme-designkit .ag-menu .ag-tab-header .ag-tab {
@@ -306,7 +335,7 @@ npm i --save designkit-datatable
 
 .ag-theme-designkit .ag-menu .ag-tab-header .ag-tab.ag-tab-selected {
   background-color: #fff;
-  border-color: #d1d6dc;
+  border-color: #D1D6DC;
   border-bottom: 2px solid #fff !important;
 }
 
@@ -361,6 +390,10 @@ npm i --save designkit-datatable
   color: #0A83F6;
 }
 
+.ag-theme-designkit .ag-menu .ag-menu-separator {
+  border-top: 0 none;
+}
+
 .ag-theme-designkit .ag-menu .ag-menu-separator > span {
   height: 8px;
   background-image: url("data:image/svg+xml;utf8,<svg width='1' height='8px' viewBox='0 0 1 8px' xmlns='http://www.w3.org/2000/svg'> <line x1='0' y1='4px' x2='1' y2='4px' stroke-width='1' stroke='%23E2E5E9'/> </svg>");
@@ -381,9 +414,10 @@ npm i --save designkit-datatable
 
 .ag-theme-designkit .ag-tool-panel {
   background-color: #fff;
-  border-color: #D1D6DC;
-  border-style: solid;
-  border-width: 0 0 0 1px;
+}
+
+.ag-theme-designkit .ag-tool-panel .ag-column-panel {
+  border-left: 1px solid #D1D6DC;
 }
 
 .ag-theme-designkit .ag-tool-panel .ag-column-select-panel {
@@ -432,6 +466,11 @@ npm i --save designkit-datatable
   float: left;
   height: 20px;
   margin: 0 4px;
+}
+
+.ag-theme-designkit .ag-tool-panel .ag-side-buttons {
+  display: none;
+  width: 0;
 }
 
 .ag-theme-designkit .ag-icon-menu {
@@ -520,7 +559,7 @@ npm i --save designkit-datatable
   line-height: 25px;
   color: #57626C;
   background: #f4f5f6;
-  border: 1px solid #d1d6dc;
+  border: 1px solid #D1D6DC;
   border-bottom: 1px solid #c8ced5;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);

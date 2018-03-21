@@ -1,3 +1,6 @@
+# v1.0.7
+* Adjust theme for ag-grid UI updates
+
 # v1.0.6
 * Added pinned column styles
 * Added column borders

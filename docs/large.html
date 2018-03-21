@@ -48,6 +48,10 @@
       font-size: 1.3rem;
       line-height: 1.615;
     }
+
+    body {
+      padding: 50px;
+    }
   </style>
 </head>
 
@@ -55,7 +59,7 @@
 
   <div id="myGrid" class="ag-theme-designkit" style="height: 100%;"></div>
 
-  <script src="https://unpkg.com/ag-grid-enterprise@15.0.0/dist/ag-grid-enterprise.min.js"></script>
+  <script src="https://unpkg.com/ag-grid-enterprise@17.0.0/dist/ag-grid-enterprise.min.js"></script>
   <script>
     var columnDefs = [{
         headerName: "Athlete",
@@ -123,6 +127,14 @@
       enableRangeSelection: true,
       unSortIcon: true,
       sortingOrder: ['asc', 'desc'],
+      toolPanelSuppressRowGroups: true,
+      toolPanelSuppressValues: true,
+      toolPanelSuppressPivots: true,
+      toolPanelSuppressPivotMode: true,
+      toolPanelSuppressSideButtons: true,
+      toolPanelSuppressColumnFilter: true,
+      toolPanelSuppressColumnSelectAll: true,
+      toolPanelSuppressColumnExpandAll: true,
       postProcessPopup: function (params) {
         // check callback is for menu
         if (params.type !== 'columnMenu') {
